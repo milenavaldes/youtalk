@@ -96,10 +96,32 @@ ul {
 }
 
 .header__burger {
-
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+.header__search-psy {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .header__search-psy {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .header__button {
+        white-space: nowrap;
+        background-color: #E3F5F5;
+        color: #03B2A5;
+        margin-right: 32px;
+    }
+
+    .header__burger {
+        display: none;
+    }
 }
 
 .main__bread-crumbs-list {
@@ -307,25 +329,27 @@ article {
     margin-top: 28px;
     justify-content: center;
     align-items: center;
-
 }
 
-.main__button-more {
+button {
     display: flex;
-    background-color: #34B3A9;
-    color: #ffff;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    width: 182px;
     padding: 12px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.main__button-more {
+    background-color: #34B3A9;
+    color: #ffff;
     justify-content: center;
     align-items: center;
     gap: 8px; 
-    border-radius: 4px;
-    border: none;
     margin-bottom: 59px;
-    cursor: pointer;
+    width: 182px;
 }
 
 .footer-container {
