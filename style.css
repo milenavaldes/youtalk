@@ -75,6 +75,8 @@ h2 {
     }
 }
 
+
+
 .header__link, .header__link-dropdown {
     white-space: nowrap;
 }
@@ -96,9 +98,15 @@ ul {
 }
 
 .header__burger {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: end;
+}
+
+@media (max-width: 767px) {
+    .header__burger {
+        display: flex;
+    }
 }
 
 .header__search-psy {
@@ -117,10 +125,6 @@ ul {
         background-color: #E3F5F5;
         color: #03B2A5;
         margin-right: 32px;
-    }
-
-    .header__burger {
-        display: none;
     }
 }
 
@@ -236,24 +240,54 @@ ul {
 }
 
 article {
-    max-width: 374px;
+    max-width: 384px;
     border: solid #DEDEDE;
     border-radius: 20px;
     margin-top: 24px;
 }
 
-@media (min-width: 415px) {
-    .articles-box article {
-        max-width: 768px;
-    }
+@media (min-width: 1024px) {
 
+    .articles-box article {
+        max-width: 460px;
+        margin: 12px;
+    }
     .articles-box article:nth-child(n+3) {
-        max-width: 352px;
+        max-width: 300px;
+        margin: 12px;
     }
     .articles-box {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+        max-width: 1290px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .articles-box article {
+        max-width: 725px;
+    }
+    .articles-box article:nth-child(n+3) {
+        max-width: 336px;
+        margin: 12px;
+    }
+    .articles-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 414px) and (max-width: 767px) {
+    .articles-box article {
+        max-width: 384px;
+    }
+    .articles-box article:nth-child(n+3) {
+        max-width: 384px;
     }
     
 }
