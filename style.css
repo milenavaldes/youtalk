@@ -197,6 +197,14 @@ ul {
     text-align: start;
 }
 
+.content-box__author--topic a{
+    color: #2963A3;
+}
+
+.content-box__top-ancor-links a {
+    text-decoration: none;
+}
+
 .topics-container {
     display: flex;
     flex-direction: row;
@@ -295,19 +303,20 @@ section {
     max-width: 100%;
     border: none;
     text-align: start;
-    text-decoration: underline;
     line-height: 24px;
+}
+
+@media (max-width: 1439px) {
+    .content-box__top-ancor-links--list li:nth-child(n+2):nth-child(-n+3) {
+        display: none;
+    }
+
 }
 
 .content-box__content {
     max-width: 100%;
     border: none;
     text-align: start;
-}
-
-.content-box__top-ancor-links ul {
-    list-style: disc;
-    color: #03B2A5;
 }
 
 .content-box__top-ancor-links ul ul {
@@ -551,6 +560,24 @@ button {
     margin-left: 8px;
 }
 
+.content-box__content--exercise {
+    border-radius: 20px;
+    padding: 16px;
+    margin: 12px 0px;
+}
+
+.exercise3 {
+    background-color: rgba(3, 178, 165, 0.10);
+}
+
+.exercise2 {
+    background-color: #FFF3EB;
+}
+
+.exercise1 {
+    background-color: #FEFAEC;
+}
+
 .banners__element--sessions,
 .banners__element--caregiving,
 .banners__element--psychologyst,
@@ -558,8 +585,17 @@ button {
     border-radius: 20px;
     border: 1px solid #C1C5CD;
     padding: 16px;
-    margin-top: 24px;
+    margin: 12px 0px;
+    max-width: 374px;
+    position: relative;
+    overflow: hidden;
 }
+
+.banners__element--loading-window {
+    background-color: #E6F0FD;
+    border: none;
+}
+
 .banners__element--sessions-title {
     color: #2963A3;
     font-size: 18px;
@@ -586,6 +622,21 @@ button {
     color: #011632;
     font-family: Open Sans;
 }
+
+.banners__element--sessions-pics {
+    position: absolute;
+}
+
+.red-session-pic {
+    bottom: -5px;
+    right: 55px;
+}
+
+.blue-session-pic {
+    bottom: -5px;
+    right: 0px;
+}
+
 
 
 .footer__subscribe-email-input {
@@ -621,6 +672,39 @@ button {
     align-items: center;
     gap: 8px;
     justify-content: center;
+}
+
+.banners__element--caregiving {
+    background-color: #2963A2;
+    min-height: 288px;
+}
+
+.banners__element--caregiving-pics {
+    position: absolute;
+}
+
+.caregiving-blue-pic,
+.caregiving-yellow-pic,
+.caregiving-red-pic {
+    bottom: -5px;
+}
+
+.caregiving-red-pic {
+    right: 0px;
+}
+
+.caregiving-blue-pic {
+    right: 20px;
+}
+
+.banners__element--caregiving-title {
+    font-size: 36px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.banners__element--caregiving {
+    padding-top: 60px;
 }
 
 .banners__element--loading-psychologyst-img {
@@ -670,10 +754,14 @@ button {
     font-weight: 400;
     line-height: 20px;
     text-align: start;
-
 }
 
-.banners__element--psychologyst-work ul {
+.banners__element--psychologyst-work strong{
+    font-size: 16px;
+}
+
+.banners__element--psychologyst-work ul,
+.content-box__top-ancor-links ul{
     list-style: disc;
     color: #03B2A5;
     margin-left: -25px;
@@ -694,7 +782,7 @@ button {
     background-color: #2963A3;
     justify-content: center;
     padding: 0px 20px 20px 20px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 @media (min-width: 1024) {
