@@ -9,7 +9,6 @@ body, header {
     color: #333;
     text-align: center;
     font-family: Montserrat, sans-serif;
-
     max-width: 1200px;
 
 }
@@ -145,9 +144,28 @@ ul {
         margin-right: 32px;
     }
 
-    .main__top-container, .header {
+    .main__top-container {
         margin: 0 30px;
         max-width: 1200px;
+    }
+
+    .header {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1280px){
+        
+    body, header {
+    max-width: 1600px;
+    border: none;
+    }
+
+    .header {
+        max-width: 1600px;
+    }
+    .main__top-container {
+        max-width: 1600px;
     }
 }
 
@@ -403,7 +421,7 @@ blockquote cite {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .main__top-container, .header {
+    .main__top-container {
         margin: 0 40px;
     }
 
@@ -418,9 +436,13 @@ blockquote cite {
         max-width: 384px;
     }
 
-    .main__top-container, .header {
+    .main__top-container {
         margin: 0 12px;
         max-width: 400px;
+    }
+
+    .header {
+
     }
     
 }
@@ -521,6 +543,7 @@ pic-caption {
 }
 
 .content-box__content--highlite1-red-spot-block {
+    display: flex;
     position: relative;
     text-align: center;
     font-size: 16px;
@@ -530,6 +553,7 @@ pic-caption {
     z-index: 1;
     background: url('./images/svg/highlite-red-spot.png') no-repeat center;
     min-height: 170px;
+    align-items: center;
 }
 
 .content-box__content--highlite1-red-spot {
@@ -546,6 +570,18 @@ pic-caption {
 .content-box__content--content-picture-box-column {
     display: flex;
     flex-flow: row;
+    max-width: 100%;
+}
+
+.content-box__content--content-picture-box-column-element {
+    padding-top: 16px;
+}
+
+@media (min-width: 768px) {
+
+    .content-box__content--content-picture-box-column-element:first-child {
+        padding-right: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -648,6 +684,38 @@ button {
 
 .exercise1 {
     background-color: #FEFAEC;
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        display: flex;
+    }
+
+    main {
+        flex: 2;
+    }
+
+    .banners-container {
+        flex: 1;
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .banners-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 690px;;
+    }
+    .banners__element {
+        flex: 40%;
+    }
+
+    .banners__element:nth-child(odd) {
+        margin-right: 16px;
+    }
+
 }
 
 .banners__element--sessions,
