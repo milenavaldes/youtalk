@@ -10,6 +10,7 @@
         <title>YouTalk - Blog</title>
     </head>
     <body>
+        <div class="header-container">
         <header class="header">
             <div class="header__logo">
                 <a href="#">
@@ -19,26 +20,26 @@
             <div class="header__nav">
                 <ul class="header__list">
                     <li class="header-item">
-                        <a href="#" class="header__link">О нас</a>
+                        <a href="#" class="header__link" aria-label="О нас - Узнайте больше о нашей компании">О нас</a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header__link">Тарифы</a>
+                        <a href="#" class="header__link" aria-label="Тарифы - Посмотреть наши тарифные планы">Тарифы</a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header__link">Для бизнеса</a>
+                        <a href="#" class="header__link" aria-label="Для бизнеса - Информация для предпринимателей">Для бизнеса</a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header__link">Психологам</a>
+                        <a href="#" class="header__link" aria-label="Психологам - Ресурсы для психологов">Психологам</a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header__link">Сертификат</a>
+                        <a href="#" class="header__link" aria-label="Сертификат - Узнайте о наших сертификатах">Сертификат</a>
                     </li>
                     <li class="header-item">
                         <a href="#" class="header__link-dropdown">Материалы</a>
                     </li>
                     <li class="header-item">
-                        <a href="#" class="header__link">FAQ</a>
-                        </li>
+                        <a href="#" class="header__link" aria-label="FAQ - Часто задаваемые вопросы">FAQ</a>
+                    </li>
                 </ul>
             </div>
             <div class="header__burger">
@@ -46,13 +47,14 @@
                     <img src="./images/svg/burger.svg" alt="nav-burger" class="image">
                 </a>
             </div>
-            <div class="header__search-psy">
+            <aside class="header__search-psy">
                 <div class="header__search-psy-button-container">
                     <button class="header__button" onclick="location.href='#'">Подобрать психолога</button>
                 </div>
-            </div>
+            </aside>
         </header>
-
+        </div>
+<div class="main-main-container">
 <div class="main-container">
     <main class="main">
         <div class="main__top-container">
@@ -217,12 +219,16 @@
         </article>
 
     <div class="main__psycho-search-box">
+        <div class="family">
+            <img src="./images/png/family.png">
+        </div>
         <h1>Откликается проблема?</h1>
         <p>Поможем подобрать специалиста по работе с подобным запросом</p>
         <div class="main__button_container">
             <button class="main__button-psycho-search" onclick="location.href='#'">Подобрать психолога
             </button>
         </div>
+
     </div>
 </main>
 
@@ -239,6 +245,10 @@
         </div>
 
         <div class="banners__element banners__element--psychologyst">
+            <div class="psychologist-connect">
+                <div>&#x1F4DD; Переписка</div>
+                <div>&#128249; Видео</div>
+            </div>
             <div class="banners__element--loading-psychologyst-img">
                 <img src="./images/png/side-pic2.png" alt="Иллюстрация к баннеру 2">
             </div>
@@ -297,60 +307,66 @@
                 <img src="./images/svg/sessions-blue.svg">
             </div>
         </div>
+        <div class="red-spot-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="218" height="606" viewBox="0 0 218 606" fill="none">
+                <path d="M597.175 560.642C783.363 343.439 643.888 216.842 480.314 100.016C316.741 -16.8092 196.58 -20.2115 106.454 33.2515C16.327 86.7144 -53.7943 263.475 56.3634 390.404C166.521 517.334 301.315 510.632 349.102 560.642C396.89 610.651 537.082 630.758 597.175 560.642Z" fill="#F7A698"/>
+                </svg>
+        </div>
     </aside>
+</div>
 </div>
 
 
-    <footer class="footer-container">
-        <div class="footer__block1">
-            <div class="footer__nav">
-                <ul class="footer__list1">
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">О нас</a>
+<footer class="footer-container">
+    <div class="footer__block1">
+        <div class="footer__nav">
+            <ul class="footer__list1">
+                <li class="footer-item">
+                    <a href="#" class="footer__link">О нас</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer__link">Тарифы</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer__link">Для бизнеса</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer__link">Психологам</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer__link">FAQ</a>
+                </li>
+            </ul>
+            <ul class="footer__list2">
+                <li class="footer-item">
+                    <a href="#" class="footer__link">Блог</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer__link">Вебинары</a>
                     </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">Тарифы</a>
+                <li class="footer-item">
+                    <a href="#" class="footer__link">Подкаст</a>
                     </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">Для бизнеса</a>
+                <li class="footer-item">
+                    <a href="#" class="footer__link">Сертификат</a>
                     </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">Психологам</a>
+                <li class="footer-item">
+                    <a href="#" class="footer__link">Контакты</a>
                     </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">FAQ</a>
-                    </li>
-                </ul>
-                <ul class="footer__list2">
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">Блог</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">Вебинары</a>
-                        </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">Подкаст</a>
-                        </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">Сертификат</a>
-                        </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer__link">Контакты</a>
-                        </li>
-                </ul>
-            </div>
-            <div class="footer__subscribe-container">
-                <p class="footer__subscribe-content">Одно письмо в неделю со свежими новостями и акциями</p>
-                <div class="footer__subscribe-container--form">
-                    <input type="email" class="footer__subscribe-email-input" placeholder="Ваш e-mail">
+            </ul>
+        </div>
+        <div class="footer__subscribe-container">
+            <p class="footer__subscribe-content">Одно письмо в неделю со свежими новостями и акциями</p>
+            <div class="footer__subscribe-container--form">
+                <input type="email" class="footer__subscribe-email-input" placeholder="Ваш e-mail">
                     <div class="footer__subscribe-send-button">
                     <a href="#" class="footer__subscribe-send-button-img">
                         <img src="./images/svg/send.svg" alt="Send">
-                    </a></div>
+                    </a>
+                    </div>
                 </div>
                 <p class="footer__subscribe-concent">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
-            </div>
-    </div>
+        </div>
         <div class="footer__socials">
             <div class="footer__participant">
                 <a href="#">
@@ -380,12 +396,12 @@
                 </div>
             </div>
         </div>
-        <div class="footer__links-container">
-            <a href="#" class="footer__link footer__link--copyrights">©Youtalk, 2018 – 2022</a>
-            <a href="#" class="footer__link footer__link--docs">Юридические документы</a>
-            <a href="#" class="footer__link footer__link--payments">Способы оплаты</a>
-        </div>        
-
-    </footer>
+    </div>
+    <div class="footer__links-container">
+        <a href="#" class="footer__link footer__link--copyrights">©Youtalk, 2018 – 2022</a>
+        <a href="#" class="footer__link footer__link--docs">Юридические документы</a>
+        <a href="#" class="footer__link footer__link--payments">Способы оплаты</a>
+    </div>        
+</footer>
     </body>
 </html>

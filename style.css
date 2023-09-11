@@ -9,7 +9,7 @@ body, header {
     color: #333;
     text-align: center;
     font-family: Montserrat, sans-serif;
-    max-width: 1200px;
+
 
 }
 
@@ -56,16 +56,20 @@ h2 {
 
 .header {
     padding: 8px 16px;
-    display: grid;
-    grid-template-columns: 40px 1fr 40px;
+    display: flex;
     border-bottom: 1px solid #EFF5FB;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: #ffffff;
     z-index: 1000;
     width: 100vw;
+}
+
+@media (max-width: 767px) {
+    .header {
+        justify-content: space-between;
+    }
 }
 
 .header__logo {
@@ -135,6 +139,7 @@ ul {
         display: flex;
         justify-content: end;
         align-items: center;
+        margin-left: 16px;
     }
 
     .header__button {
@@ -151,21 +156,49 @@ ul {
 
     .header {
         max-width: 1200px;
+        justify-content: space-between;
     }
+}
+
+.red-spot-svg {
+    display: none;
+}
+
+.family {
+    display: none;
 }
 
 @media (min-width: 1280px){
         
     body, header {
-    max-width: 1600px;
+
     border: none;
     }
 
     .header {
         max-width: 1600px;
+        justify-content: center;
     }
     .main__top-container {
         max-width: 1600px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .red-spot-svg {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        margin-top: 900px;
+    }
+
+    .family {
+        display: flex;
+        position: absolute;
+        right: 400px;
     }
 }
 
@@ -686,9 +719,23 @@ button {
     background-color: #FEFAEC;
 }
 
+.main-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .main-main-container {
+        display: block;
+    }
+}
+
 @media (min-width: 1024px) {
     .main-container {
         display: flex;
+        justify-content: center;
+        align-self: center;
     }
 
     main {
@@ -742,6 +789,22 @@ button {
     font-weight: 700;
     line-height: 26px;
     text-align: start;
+}
+
+.psychologist-connect {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+}
+
+
+.psychologist-connect > * {
+    display: flex;
+    align-self: flex-start;
+    background-color: rgba(243, 244, 248, 0.70);
+    border-radius: 6px;
+    padding: 0px 6px;
 }
 
 .banners__element--sessions-title span:first-of-type {
@@ -934,7 +997,7 @@ button {
     margin-top: 40px;
 }
 
-@media (min-width: 1024) {
+@media (min-width: 1024p) {
     .footer-container  {
         flex-direction: row;
     }
